@@ -1,0 +1,81 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto, sans serif';
+}
+header{
+    background-image: url(images/Dessert.pexel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(10, 10, 10, 0.3);
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+nav li span{
+    padding-left: 5px;
+}
+li a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: #fff;
+}
+.cart a{
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.add-cart{
+    position: absolute;
+    width: 90%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 900;
+}
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9{
+    bottom: 2px;
+    opacity: 1;
+    /* padding: 5px; */
+    text-decoration: none;
+}
